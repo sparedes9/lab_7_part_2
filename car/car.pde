@@ -15,7 +15,7 @@ void draw() {
   
  //SHADOW
   fill(127);
-  ellipse(215, 335, 250, 30);
+  ellipse(215+x, 335, 250, 30);
 
   //BUS
   fill(255, 255, 0);
@@ -24,7 +24,14 @@ void draw() {
  
   //WHEELS
   fill(0);
-  ellipse(140, 325, 40, 40);
-  ellipse(290, 325, 40, 40);
+  ellipse(140+x, 325, 40, 40);
+  ellipse(290+x, 325, 40, 40);
+  
+  //MAKE CAR MOVE
+  if(x>=0){
+  x++;}
+  else{
+   x--; 
+  }
 }
 
